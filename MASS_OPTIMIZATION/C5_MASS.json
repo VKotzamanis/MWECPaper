@@ -1,0 +1,190 @@
+{
+  "metadata":{
+  "geometry_file":"C5.stl"
+},
+  "design_variables":{
+  "vertical_draft_m":0.53702514941312918,
+  "ballast_density_profile":{
+  "node_positions_z_m":[
+    -2.5,
+  -1.3333333333333333,
+  -0.16666666666666652,
+  1
+  ],
+  "node_densities_kg_m3":[
+    1790.2432391879997,
+  100,
+  100,
+  100
+  ],
+  "interpolation_method":"linear"
+}
+},
+  "geometry":{
+  "total_wec_volume_m3":19.726978764348075,
+  "submerged_volume_m3":15.423261770384352,
+  "waterplane_area_m2":2.7946926376617234,
+  "waterplane_moments_m4":{
+  "Ixx":1.8431419739184534,
+  "Iyy":0.21758864097308042
+}
+},
+  "mass_properties":{
+  "total_mass_kg":15808.843314643942,
+  "center_of_gravity_m":[
+    -1.4237680161032095E-6,
+  6.89321324188616E-5,
+  -1.4980713865594963
+  ],
+  "center_of_buoyancy_m":[
+    -2.6591000490657062E-6,
+  1.6066824164762834E-6,
+  -1.4121763242772285
+  ],
+  "inertia_tensor_CG_kg_m2":{
+  "Ixx":12204.661527261329,
+  "Iyy":12204.661527261329,
+  "Izz":12204.661527261329,
+  "Ixy":0,
+  "Ixz":0,
+  "Iyz":0
+},
+  "mass_matrix_6x6_CG":[
+    [
+    15808.843314643942,
+  0,
+  0,
+  -0,
+  0,
+  -0
+  ],
+  [
+    0,
+  15808.843314643942,
+  0,
+  -0,
+  -0,
+  0
+  ],
+  [
+    0,
+  0,
+  15808.843314643942,
+  0,
+  -0,
+  -0
+  ],
+  [
+    0,
+  -0,
+  0,
+  12204.661527261329,
+  0,
+  0
+  ],
+  [
+    0,
+  0,
+  -0,
+  0,
+  12204.661527261329,
+  0
+  ],
+  [
+    -0,
+  0,
+  0,
+  0,
+  0,
+  12204.661527261329
+  ]
+  ]
+},
+  "hydrostatic_stability":{
+  "metacentric_height_GM_m":0.10000288488247122,
+  "metacenter_position_m":[
+    0,
+  0,
+  -1.3980685016770251
+  ],
+  "KB_m":-1.4121763242772285,
+  "KG_m":-1.4980713865594963,
+  "BM_m":0.014107822600203379,
+  "buoyancy_mass_balance":{
+  "mass_total_kg":15808.843314643942,
+  "buoyancy_force_kg":15808.84331464396,
+  "discrepancy_kg":-1.8189894035458565E-11,
+  "discrepancy_percent":1.1506151129101915E-13
+}
+},
+  "dynamic_response":{
+  "natural_periods_s":{
+  "surge":null,
+  "heave":6.3337711685656464,
+  "pitch":7.0061086896706559
+},
+  "virtual_masses_kg_or_kg_m2":{
+  "M11_surge":40340.772454466016,
+  "M33_heave":28555.641727472132,
+  "M55_pitch":19283.045917851661
+},
+  "total_stiffness_N_m_or_Nm_rad":{
+  "K11_surge":0,
+  "K33_heave":28101.333144848046,
+  "K55_pitch":15508.92269295095
+},
+  "stiffness_components":{
+  "hydrostatic":{
+  "K33_heave":28101.333144848046,
+  "K55_pitch":15508.92269295095
+},
+  "pto":{
+  "K11_surge":0,
+  "K33_heave":0,
+  "K55_pitch":0
+}
+}
+},
+  "pto_system":{
+  "enabled":false
+},
+  "optimization_performance":{
+  "target_periods_s":{
+  "heave_goal":10,
+  "pitch_goal":4,
+  "surge_goal":null
+},
+  "achieved_periods_s":{
+  "heave":6.3337711685656464,
+  "pitch":7.0061086896706559,
+  "surge":null
+},
+  "period_errors_percent":{
+  "heave":-36.662288314343542,
+  "pitch":75.1527172417664,
+  "surge":null
+},
+  "constraints":{
+  "GM_minimum_m":0.1,
+  "GM_achieved_m":0.10000288488247122,
+  "GM_satisfied":true,
+  "mass_balance_error_percent":1.1506151129101915E-13,
+  "mass_balance_satisfied":true
+},
+  "objective_function_value":1.0E+12,
+  "optimizer_exit_flag":1,
+  "optimizer_message":"\nLocal minimum found that satisfies the constraints.\n\nOptimization completed because the objective function is non-decreasing in \nfeasible directions,
+   to within the value of the optimality tolerance,
+  \nand constraints are satisfied to within the value of the constraint tolerance.\n\n<stopping criteria details>\n\nOptimization completed: The relative first-order optimality measure,
+   1.583921e-08,
+  \nis less than options.OptimalityTolerance = 1.000000e-05,
+   and the relative maximum constraint\nviolation,
+   1.677453e-16,
+   is less than options.ConstraintTolerance = 1.000000e-05.\n\n"
+},
+  "physical_constants":{
+  "water_density_kg_m3":1025,
+  "gravity_m_s2":9.81,
+  "seabed_depth_m":-50
+}
+}
